@@ -1,15 +1,13 @@
-names:
-- '0'
-- '1'
-- '4'
-- '7'
-nc: 4
-roboflow:
-  license: CC BY 4.0
-  project: yolov7-papaya-disease-detections
-  url: https://universe.roboflow.com/pedrolyra/yolov7-papaya-disease-detections/dataset/2
-  version: 2
-  workspace: pedrolyra
+train: ../train/images
+val: ../valid/images
 test: ../test/images
-train: yolov7-papaya-disease-detections-2/train/images
-val: yolov7-papaya-disease-detections-2/valid/images
+
+nc: 9
+names: ['0', '1', '2', '3', '4', '5', '6', '7', '8']
+
+roboflow:
+  workspace: pedrolyra
+  project: yolov7-papaya-disease-detection
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/pedrolyra/yolov7-papaya-disease-detection/dataset/1
