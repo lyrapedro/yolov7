@@ -1,13 +1,20 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
-
+names:
+- '0'
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'
+- '7'
+- '8'
 nc: 9
-names: ['0', '1', '2', '3', '4', '5', '6', '7', '8']
-
 roboflow:
-  workspace: pedrolyra
-  project: yolov7-papaya-disease-detection
-  version: 1
   license: CC BY 4.0
+  project: yolov7-papaya-disease-detection
   url: https://universe.roboflow.com/pedrolyra/yolov7-papaya-disease-detection/dataset/1
+  version: 1
+  workspace: pedrolyra
+test: dados/teste/images
+train: dados/treino/images
+val: dados/validacao/images
